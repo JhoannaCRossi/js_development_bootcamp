@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Counter</title>
+</head>
+<body>
+    <h3> Click Counter</h3>
+
+    <button id="clickMe" onclick="increment()">Click me: 0</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        var count = 0;
+        function reset() {
+            count = 0;
+            document.getElementById("clickMe").innerHTML = "Click me: " + count;
+        }
+
+        function increment() {
+            count++;
+            document.getElementById("clickMe").innerHTML = "Click me: " + count; 
+        }
+    </script>
+
+</body>
+</html>

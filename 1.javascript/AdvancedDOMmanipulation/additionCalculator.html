@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Calculator</title>
+</head>
+<body>
+    <p id="sometext"></p>
+
+    <input type="text" id="first" placeholder="enter number">
+    <input type="text" id="second" placeholder="enter second number">
+    <button onclick="add()">Add</button>
+    
+    <script>
+        function add(){
+            var first, second, addition;
+
+            first = Number(document.getElementById("first").value);
+            second = Number(document.getElementById("second").value);
+
+            addition = first + second;
+
+            document.getElementById("sometext").innerHTML = addition;
+        }
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style</title>
+</head>
+<body>
+    <p id="text">This is some text</p>
+    <button onclick="changeColor()">Change</button>
+    <script>
+        function changeColor(){
+            document.getElementById("text").style.backgroundColor = "pink";
+            document.getElementById("text").style.color = "gray";
+            document.getElementById("text").style.fontSize = "200%";
+
+        }
+    </script>
+</body>
+</html>

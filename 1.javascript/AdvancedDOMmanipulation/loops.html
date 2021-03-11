@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <!--
+        for(statement 1; statement 2; statement 3){
+            //code block to be executed
+        }
+    -->
+    <script>
+        var cars = ["volkswagon", "bmw", "honda", "mercedes", "hyundai"];
+
+        var i;
+        document.write("<br>Loop for <br>");
+        for (i = 0; i < cars.length; i++) {
+            console.log(cars[i]);   
+        }
+
+        var x = 0;
+        
+        for (x of cars) {
+            document.write(x + "<br> ");
+            x++;
+        }
+        
+        /*while loop 
+            while(condition){
+                //code block to be executed
+            }
+        */
+        i = 0;
+        document.write("<br>Loop while <br>");
+        while(i < cars.length){
+            document.write(cars[i] + "<br> ");
+            i++;
+        }
+
+        /*do while loop 
+            do{
+                //code block to be executed
+            }while(condition)
+        */
+        y = 0;
+        document.write("<br>Loop do while <br>");
+        do{
+            document.write(cars[y] + "<br> ");
+            y++;
+        }while(y < cars.length)
+
+    </script>
+
+</body>
+</html>
